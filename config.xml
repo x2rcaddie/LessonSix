@@ -87,4 +87,16 @@
     
     <gap:plugin name="org.apache.cordova.inappbrowser" spec="0.6.0"
     	source="npm">
+    </gap:plugin>
+    <gap:plugin name="org.apache.cordova.geolocation" spec="0.3.12"
+    	source="npm">
+    </gap:plugin>
+    <gap:config-file platform="ios"
+    	parent="NSLocationAlwaysUsageDescription" mode="merge">
+    	<array>
+    		<string>Allow GPS</string>
+    	</array>
+    </gap:config-file>
+    <gap:plugin name="org.transistorsoft.cordova.background-geolocation"
+    	spec="0.2.0" source="npm">
     </gap:plugin></widget>
